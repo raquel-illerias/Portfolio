@@ -62,7 +62,6 @@ body {
     font-family: var(--family-oswald);
     font-weight: 400;
     font-size: 1.8em;
-    margin: 2rem 0;
     border-bottom: 1px solid var(--black);
     text-transform: uppercase;
 }
@@ -324,6 +323,10 @@ section {
 
 /* ========== PRICE ========== */
 
+.serving-type {
+    margin: 3rem 0;
+}
+
 .price {
     width: 300px;
     height: 15vh;
@@ -334,7 +337,7 @@ section {
 }
 
 .price h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .price summary {
@@ -450,6 +453,11 @@ section {
 .flavour {
     width: 100%;
     min-height: 80vh;
+    margin-top: 5rem;
+}
+
+.flavour .subtitle {
+    margin-top: 2rem;
 }
 
 .grid {
@@ -537,6 +545,17 @@ footer {
     margin-top: 1.5rem;
 }
 
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.author svg {
+    width: 35px;
+    height: 35px;
+    margin-left: 1.2rem;
+}
 
 /* ================ MEDIA QUERIES =============== */
 
@@ -585,15 +604,21 @@ footer {
         margin: 2rem 1.5rem 6rem;
     }
     
-
-    footer {
-        display: grid;
-        grid-template-columns: 380px 380px;
-        grid-template-rows: 150px 400px;    
+    .footer__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .footer {
-        margin-left: 100px;
+    .footer h3, .footer p {
+        text-align: center;
     }
 
      .footer .title {
@@ -603,6 +628,7 @@ footer {
     .footer .address {
         padding-top: 0;
     }
+
    
 }
 

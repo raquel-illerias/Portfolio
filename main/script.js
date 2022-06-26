@@ -3,13 +3,11 @@ const openMenuButton = document.getElementById('open-menu')
 const closeMenuButton = document.getElementById('close-menu')
 const navMenu = document.getElementById('navigation-menu')
 const homeLogoButton = document.getElementById('home-logo')
-// LIGHT TOGGLE VARIABLES
-const sunnyMode = document.querySelector('.sun-mode')
-const nightMode = document.querySelector('.night-mode')
-const main = document.querySelector('main')
-const body = document.querySelector('body')
-const header = document.querySelector('header')
-const menu = document.querySelector('#open-menu svg path')
+const projectbtn = document.getElementById('projectbtn')
+const aboutbtn = document.getElementById('aboutbtn')
+const contactbtn = document.getElementById('contactbtn')
+// THEME TOGGLER VARIABLE
+let themeToggler = document.querySelector('#theme-toggler')
 
 
 // ============= FUNCTIONS ===========
@@ -29,31 +27,82 @@ function closeMenu() {
 
 }
 
+
+//HOMEBUTTON
+
+
 // =============== ADD EVENT LISTENERS =============
 
 //MENU
 openMenuButton.addEventListener('click', openMenu)
 closeMenuButton.addEventListener('click', closeMenu)
-// homeLogoButton.addEventListener('click', () => window.scrollTo(0,0))
+projectbtn.addEventListener('click', closeMenu)
+aboutbtn.addEventListener('click', closeMenu)
+contactbtn.addEventListener('click', closeMenu)
+homeLogoButton.addEventListener('click', () => window.scrollTo(0,0))
 
-//LIGHT TOGGLE
-sunnyMode.addEventListener('click', () => {
-  sunnyMode.style.display = 'none'
-  nightMode.style.display = 'flex'
-  header.style.backgroundColor = 'var(--color-7)'
-  body.style.color = 'var(--color-6)'
-  main.style.backgroundColor = 'var(--color-7)'
-  menu.style.fill = 'var(--color-6)'
+//THEME TOGGLE
+
+themeToggler.onclick=()=> {
+    themeToggler.classList.toggle('switch:checked')
+    if(themeToggler.classList.contains('switch:checked')) {
+        document.querySelector('body').classList.add('active')
+    }
+
+    else {
+        document.querySelector('body').classList.remove('active')
+    }
+}
+
+
+// ====== CONTACT: PLANE PATH ==========
+
+gsap.registerPlugin(MotionPathPlugin);
+
+gsap.to("#plane", {duration: 5, motionPath: "#path"});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from ("#projects", {
+    scrollTrigger: {
+        trigger: "#projects",
+        start: "top center"
+    },
+    opacity: 0,
+    duration: 2
+});
+
+gsap.from ("#about", {
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top center"
+    },
+    opacity: 0,
+    duration: 1
+});
+gsap.from ("#contact", {
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top center"
+    },
+    opacity: 0,
+    duration: 1
+});
+
+
+// =========== PROJECT CARDS SLIDING ANIMATION ========= 
+
+const blocks = document.querySelectorAll('.block')
+
+blocks.forEach(block => {
+    block.addEventListener('click', function card() {
+        
+    }
+    )
 })
 
-nightMode.addEventListener('click', () => {
-  nightMode.style.display = 'none'
-  sunnyMode.style.display = 'flex'
-  header.style.backgroundColor = 'var(--color-6)'
-  body.style.backgroundColor = 'var(--color-6)'
-  body.style.color = 'var(--color-7)'
-  main.style.backgroundColor = 'var(--color-6)'
-  menu.style.fill = 'var(--color-7)' 
-})
+
+
 
 

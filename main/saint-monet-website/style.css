@@ -87,7 +87,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 2;
+  
 }
 
 header .content {
@@ -407,42 +408,6 @@ section {
     cursor: pointer;
 }
 
-/* ========== TIMELESS DETAILS ========== */
-/* 
-.timeless {
-    width: 100%;
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./images/accesories.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 4rem 0;
-}
-
-.timeless__container {
-    width: 250px;
-    height: 70px;
-    background-color: var(--white);
-    text-transform: uppercase;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   line-height: 2rem;
-}
-
-.timeless__container h3 {
-    color: var(--black);
-    font-family: var(--family-franklin);
-}
-
-.timeless__container h3 span {
-    font-weight: 300;
-} */
-
 
 /* ========== PRODUCT SLIDER ========== */
 
@@ -450,6 +415,7 @@ section {
     width: 100%;
     min-height: 100vh;
     display: block;
+   
 }
 
 .product__text h3 {
@@ -460,6 +426,10 @@ section {
     text-align: center;
     padding: 6rem 2rem 2rem;
     color: var(--black);
+}
+
+.product-slider {
+    overflow: hidden;
 }
 
 .product__column {
@@ -489,7 +459,7 @@ section {
     min-height: 50vh;
     background-color: var(--white);
     color: var(--black);
-    margin-left: 3rem;
+    padding-left: 3rem;
     font-family: var(--family-franklin);
 }
 
@@ -591,14 +561,11 @@ section {
 
     .footer__details {
         display: grid;
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: 350px 350px;
         grid-template-rows: 150px 320px;
-        margin-top: 5rem;
+        padding-top: 5rem;
     }
 
-    .footer__details div {
-        margin-left: 100px;
-    }
 
     .address {
         padding-top: 0;
@@ -702,8 +669,18 @@ section {
         cursor: pointer;
     }
 
+    .footer__details {
+        min-height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
 }
 
 /* ==========EXTRA LARGE SCREENS, TV========== */
 
-@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1201px) {
+
+}

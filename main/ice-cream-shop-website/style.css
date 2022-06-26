@@ -335,6 +335,11 @@ section {
     text-shadow: 1px 1px var(--black);
 }
 
+.blank-space {
+    width: 100%;
+    height: 20vh;
+}
+
 /* =========== FLAVOURS ========== */
 .flavour {
     width: 100%;
@@ -351,10 +356,12 @@ section {
 
 .flavour__img {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-image: url("./images/dairy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* ========== DAIRY ========== */
@@ -440,12 +447,13 @@ section {
 }
 
 .place__image {
+    width: 100%;
+    height: 70vh;
     background-image: url("./images/chairs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    width: 100%;
-    height: 50vh;
 }
 
 
@@ -543,6 +551,18 @@ footer {
     height: 40px;
     margin-top: 1.5rem;
 }
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.author svg {
+    width: 35px;
+    height: 35px;
+    margin-left: 1.2rem;
+}
 
 
 
@@ -620,6 +640,10 @@ footer {
         bottom: 2rem;
     }
 
+    .flavour__text, .place__text {
+        margin: 5rem 8rem;
+    }
+
     .discount__description {
         margin: 0 5rem;
     }
@@ -638,16 +662,22 @@ footer {
         margin-bottom: 2rem;
         
     }
-    
 
-    footer {
-        display: grid;
-        grid-template-columns: 380px 380px;
-        grid-template-rows: 150px 400px;    
+    .footer__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .footer {
-        margin-left: 100px;
+    .footer h3, .footer p {
+        text-align: center;
     }
 
      .footer .title {
@@ -681,50 +711,6 @@ footer {
 
     .banner-image h1 {
         margin-top: 12rem;
-    }
-
-    .flex__row {
-        display: flex;
-    }
-
-    .flavour {
-        width: 100%;
-        height: 60vh;
-    }
-
-    .flavour__text {
-        width: 50%;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .flavour__img {
-        width: 50%;
-        height: 60vh;
-    }
-
-    .place {
-        width: 100%;
-        height: 60vh;
-        margin-bottom: 2rem;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .place__text {
-        width: 50%;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .place__image {
-        width: 50%;
-        height: 60vh;
     }
     
 }

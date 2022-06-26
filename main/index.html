@@ -9,7 +9,13 @@
     <meta name="author" content="Raquel Illerías">
     <title>Raquel Illerias || Frontend Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -17,25 +23,15 @@
 <body>
 
     <header>
-        <div id="light-toggle">
-            <div class="sun-mode">
+        <h1 id="home-logo">Raquel Illerias</h1>
+        <div class="header__right">
+            <input id="theme-toggler" class="switch" type="checkbox" name="checkbox">
+            <div id="open-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                    <path
-                        d="M24 9.5Q23.35 9.5 22.925 9.075Q22.5 8.65 22.5 8V3.5Q22.5 2.85 22.925 2.425Q23.35 2 24 2Q24.65 2 25.075 2.425Q25.5 2.85 25.5 3.5V8Q25.5 8.65 25.075 9.075Q24.65 9.5 24 9.5ZM34.25 13.75Q33.8 13.3 33.8 12.7Q33.8 12.1 34.25 11.65L37.4 8.45Q37.85 8 38.475 8Q39.1 8 39.55 8.45Q40 8.9 40 9.5Q40 10.1 39.55 10.55L36.35 13.75Q35.9 14.2 35.3 14.2Q34.7 14.2 34.25 13.75ZM40 25.5Q39.35 25.5 38.925 25.075Q38.5 24.65 38.5 24Q38.5 23.35 38.925 22.925Q39.35 22.5 40 22.5H44.5Q45.15 22.5 45.575 22.925Q46 23.35 46 24Q46 24.65 45.575 25.075Q45.15 25.5 44.5 25.5ZM24 46Q23.35 46 22.925 45.575Q22.5 45.15 22.5 44.5V40Q22.5 39.35 22.925 38.925Q23.35 38.5 24 38.5Q24.65 38.5 25.075 38.925Q25.5 39.35 25.5 40V44.5Q25.5 45.15 25.075 45.575Q24.65 46 24 46ZM11.65 13.75 8.45 10.6Q8 10.15 8 9.525Q8 8.9 8.45 8.45Q8.9 8 9.5 8Q10.1 8 10.55 8.45L13.75 11.65Q14.2 12.1 14.2 12.7Q14.2 13.3 13.75 13.75Q13.3 14.15 12.675 14.15Q12.05 14.15 11.65 13.75ZM37.45 39.55 34.25 36.35Q33.8 35.9 33.8 35.3Q33.8 34.7 34.25 34.25Q34.65 33.85 35.275 33.85Q35.9 33.85 36.35 34.25L39.6 37.4Q40.05 37.85 40.025 38.475Q40 39.1 39.6 39.55Q39.15 40 38.525 40Q37.9 40 37.45 39.55ZM3.5 25.5Q2.85 25.5 2.425 25.075Q2 24.65 2 24Q2 23.35 2.425 22.925Q2.85 22.5 3.5 22.5H8Q8.65 22.5 9.075 22.925Q9.5 23.35 9.5 24Q9.5 24.65 9.075 25.075Q8.65 25.5 8 25.5ZM8.45 39.55Q8 39.1 8 38.5Q8 37.9 8.45 37.45L11.65 34.25Q12.05 33.85 12.675 33.85Q13.3 33.85 13.75 34.25Q14.2 34.7 14.2 35.325Q14.2 35.95 13.75 36.4L10.6 39.55Q10.15 40 9.525 40Q8.9 40 8.45 39.55ZM24 36Q19 36 15.5 32.5Q12 29 12 24Q12 19 15.5 15.5Q19 12 24 12Q29 12 32.5 15.5Q36 19 36 24Q36 29 32.5 32.5Q29 36 24 36ZM24 33Q27.75 33 30.375 30.375Q33 27.75 33 24Q33 20.25 30.375 17.625Q27.75 15 24 15Q20.25 15 17.625 17.625Q15 20.25 15 24Q15 27.75 17.625 30.375Q20.25 33 24 33Z" />
+                    <path fill="#f7f7f7"
+                        d="M7.5 36Q6.85 36 6.425 35.575Q6 35.15 6 34.5Q6 33.85 6.425 33.425Q6.85 33 7.5 33H40.5Q41.15 33 41.575 33.425Q42 33.85 42 34.5Q42 35.15 41.575 35.575Q41.15 36 40.5 36ZM7.5 25.5Q6.85 25.5 6.425 25.075Q6 24.65 6 24Q6 23.35 6.425 22.925Q6.85 22.5 7.5 22.5H40.5Q41.15 22.5 41.575 22.925Q42 23.35 42 24Q42 24.65 41.575 25.075Q41.15 25.5 40.5 25.5ZM7.5 15Q6.85 15 6.425 14.575Q6 14.15 6 13.5Q6 12.85 6.425 12.425Q6.85 12 7.5 12H40.5Q41.15 12 41.575 12.425Q42 12.85 42 13.5Q42 14.15 41.575 14.575Q41.15 15 40.5 15Z" />
                 </svg>
             </div>
-            <div class="night-mode">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                    <path
-                        d="M24 42Q16.5 42 11.25 36.75Q6 31.5 6 24Q6 16.5 11.25 11.25Q16.5 6 24 6Q24.4 6 24.85 6.025Q25.3 6.05 26 6.1Q24.2 7.7 23.2 10.05Q22.2 12.4 22.2 15Q22.2 19.5 25.35 22.65Q28.5 25.8 33 25.8Q35.6 25.8 37.95 24.875Q40.3 23.95 41.9 22.3Q41.95 22.9 41.975 23.275Q42 23.65 42 24Q42 31.5 36.75 36.75Q31.5 42 24 42ZM24 39Q29.45 39 33.5 35.625Q37.55 32.25 38.55 27.7Q37.3 28.25 35.875 28.525Q34.45 28.8 33 28.8Q27.25 28.8 23.225 24.775Q19.2 20.75 19.2 15Q19.2 13.8 19.45 12.425Q19.7 11.05 20.35 9.3Q15.45 10.65 12.225 14.775Q9 18.9 9 24Q9 30.25 13.375 34.625Q17.75 39 24 39ZM23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Q23.8 24.15 23.8 24.15Z" />
-                </svg>
-            </div>
-        </div>
-        <div id="open-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path fill="#f7f7f7"
-                    d="M7.5 36Q6.85 36 6.425 35.575Q6 35.15 6 34.5Q6 33.85 6.425 33.425Q6.85 33 7.5 33H40.5Q41.15 33 41.575 33.425Q42 33.85 42 34.5Q42 35.15 41.575 35.575Q41.15 36 40.5 36ZM7.5 25.5Q6.85 25.5 6.425 25.075Q6 24.65 6 24Q6 23.35 6.425 22.925Q6.85 22.5 7.5 22.5H40.5Q41.15 22.5 41.575 22.925Q42 23.35 42 24Q42 24.65 41.575 25.075Q41.15 25.5 40.5 25.5ZM7.5 15Q6.85 15 6.425 14.575Q6 14.15 6 13.5Q6 12.85 6.425 12.425Q6.85 12 7.5 12H40.5Q41.15 12 41.575 12.425Q42 12.85 42 13.5Q42 14.15 41.575 14.575Q41.15 15 40.5 15Z" />
-            </svg>
         </div>
     </header>
 
@@ -47,9 +43,9 @@
                 d="M24 26.1 13.5 36.6Q13.05 37.05 12.45 37.05Q11.85 37.05 11.4 36.6Q10.95 36.15 10.95 35.55Q10.95 34.95 11.4 34.5L21.9 24L11.4 13.5Q10.95 13.05 10.95 12.45Q10.95 11.85 11.4 11.4Q11.85 10.95 12.45 10.95Q13.05 10.95 13.5 11.4L24 21.9L34.5 11.4Q34.95 10.95 35.55 10.95Q36.15 10.95 36.6 11.4Q37.05 11.85 37.05 12.45Q37.05 13.05 36.6 13.5L26.1 24L36.6 34.5Q37.05 34.95 37.05 35.55Q37.05 36.15 36.6 36.6Q36.15 37.05 35.55 37.05Q34.95 37.05 34.5 36.6Z" />
         </svg>
 
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="#margin" id="projectbtn">Projects</a>
+        <a href="#about" id="aboutbtn">About</a>
+        <a href="#contact" id="contactbtn">Contact</a>
 
     </nav>
 
@@ -59,119 +55,149 @@
         <section id="landing">
 
             <div class="landing__text">
-                <div class="landing-text-container fadeInDownBig rubberBand">
-
-                    <h1>Raquel</h1>
-
-                    <h2 class="subtitle">Frontend Developer</h2>
+                <div class="landing__img">
+                    <img src="./images/myself-sticker.png" alt="">
                 </div>
-                <p class="fadeInLeft">CURIOUS + GEEK + EMPATHIC = ME</p>
+                <div class="landing-text-container">
+                    <h2 class="subtitle slide">Frontend Developer</h2>
+                </div>
+                <p class="fadeInLeft">ENTHUSIASTIC + CURIOUS + GEEK + EMPATHIC = ME</p>
+
             </div>
 
-            <div class="landing__btn">
+
+            <div class="landing__btn slideBtnLeft">
                 <button type="button"><a href="#margin">MY PROJECTS</a></button>
             </div>
 
             <ul class="icon__wrapper">
-                <li class="icon github"><svg viewBox="0 0 128 128">
-                        <g fill="#181616">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
-                            </path>
+                <li class="icon github"><a href="https://github.com/raquel-illerias" target="_blank"><svg
+                            viewBox="0 0 128 128">
+                            <g fill="#181616">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
+                                </path>
+                                <path
+                                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                </path>
+                            </g>
+                        </svg></a></li>
+
+                <li class="icon gmail"><a href="mailto:raquel-illerias@gmail.com" target="_blank"><svg fill="#000000"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
                             <path
-                                d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
-                            </path>
-                        </g>
-                    </svg></li>
+                                d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z" />
+                        </svg></a></li>
 
-                <li class="icon gmail"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
-                        width="100px" height="100px">
-                        <path
-                            d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z" />
-                    </svg></li>
-
-                <li class="icon linkedin">
-                    <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                        width="120px" height="120px">
-                        <path
-                            d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" />
-                    </svg>
+                <li class="icon linkedin"><a href="https://es.linkedin.com/in/raquel-iller%C3%ADas-g%C3%B3mez-44a94959"
+                        target="_blank">
+                        <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                            width="120px" height="120px">
+                            <path
+                                d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" />
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </section>
 
         <!-- ========== PROJECTS ======== -->
-        <div id="margin"></div>
-        <section id="projects">
-            <h3>PROJECTS</h3>
-            <div class="card">
-                <div class="block">
-                    <figure>
-                        <div class="card__img">
-                            <img src="./images/saint-card.png" alt="">
-                        </div>
-                        <figcaption>
-                            <div class="card__text">
-                                <h4>Clothing Shop Website</h4>
-                                <ul class="card__languages">
-                                    <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-javascript-plain colored"></i></li>
-                                </ul>
-                                <ul class="card__options">
-                                    <li><a href="" target="_blank">Code</a></li>
-                                    <li><a href="" target="_blank">Live</a></li>
-                                </ul>
+        <div id="margin">
+            <section id="projects">
+                <h3>PROJECTS</h3>
+                  <div class="card">
+                    <div class="block">
+                        <figure>
+                            <div class="card__img">
+                                <img src="./images/saint-card.png" alt="">
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="block">
-                    <figure>
-                        <div class="card__img">
-                            <img src="./images/dolcissimo-card.png" alt="">
-                        </div>
-                        <figcaption>
-                            <div class="card__text">
-                                <h4>Ice Cream Shop Website</h4>
-                                <ul class="card__languages">
-                                    <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-javascript-plain colored"></i></li>
-                                </ul>
-                                <ul class="card__options">
-                                    <li><a href="" target="_blank">Code</a></li>
-                                    <li><a href="" target="_blank">Live</a></li>
-                                </ul>
+                            <figcaption>
+                                <div class="card__text">
+                                    <h4>Clothing Shop Website</h4>
+                                    <ul class="card__languages">
+                                        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-javascript-plain colored"></i></li>
+                                    </ul>
+                                    <ul class="card__options">
+                                        <li><a href="https://github.com/raquel-illerias/Portfolio/tree/main/main/saint-monet-website"
+                                                target="_blank">Code</a></li>
+                                        <li><a href="./saint-monet-website/index.html" target="_blank">Live</a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <figure>
+                            <div class="card__img">
+                                <img src="./images/dolcissimo-card.png" alt="">
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="block">
-                    <figure>
-                        <div class="card__img">
-                            <img src="./images/starbucks-card.png" alt="">
-                        </div>
-                        <figcaption>
-                            <div class="card__text">
-                                <h4>Starbucks Clone</h4>
-                                <ul class="card__languages">
-                                    <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-                                    <li><i class="devicon-javascript-plain colored"></i></li>
-                                </ul>
-                                <ul class="card__options">
-                                    <li><a href="" target="_blank">Code</a></li>
-                                    <li><a href="" target="_blank">Live</a></li>
-                                </ul>
+                            <figcaption>
+                                <div class="card__text">
+                                    <h4>Ice Cream Shop Website</h4>
+                                    <ul class="card__languages">
+                                        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-javascript-plain colored"></i></li>
+                                    </ul>
+                                    <ul class="card__options">
+                                        <li><a href="https://github.com/raquel-illerias/Portfolio/tree/main/main/ice-cream-shop-website"
+                                                target="_blank">Code</a></li>
+                                        <li><a href="./ice-cream-shop-website/index.html" target="_blank">Live</a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <figure>
+                            <div class="card__img">
+                                <img src="./images/starbucks-card.png" alt="">
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>
+                            <figcaption>
+                                <div class="card__text">
+                                    <h4>Starbucks Clone</h4>
+                                    <ul class="card__languages">
+                                        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-javascript-plain colored"></i></li>
+                                    </ul>
+                                    <ul class="card__options">
+                                        <li><a href="https://github.com/raquel-illerias/Portfolio/tree/main/main/starbucks-clone"
+                                                target="_blank">Code</a></li>
+                                        <li><a href="./starbucks-clone/index.html" target="_blank">Live</a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="block">
+                        <figure>
+                            <div class="card__img">
+                                <img src="./images/starbucks-card.png" alt="">
+                            </div>
+                            <figcaption>
+                                <div class="card__text">
+                                    <h4>Starbucks Clone</h4>
+                                    <ul class="card__languages">
+                                        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                                        <li><i class="devicon-javascript-plain colored"></i></li>
+                                    </ul>
+                                    <ul class="card__options">
+                                        <li><a href="https://github.com/raquel-illerias/Portfolio/tree/main/main/starbucks-clone"
+                                                target="_blank">Code</a></li>
+                                        <li><a href="./starbucks-clone/index.html" target="_blank">Live</a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
 
-            </div>
-
-        </section>
+                </div>
+            </section>
+        </div>
 
         <!-- ========== ABOUT ======== -->
 
@@ -256,39 +282,71 @@
         <!-- ======== CONTACT ====== -->
 
         <section id="contact">
-            <h3>CONTACT</h3>
-            <p>Should you wish to contact me, feel free to email or drop me a message on Linkedin and I'll get back to
-                you shortly.</p>
-            <ul class="contact__container">
-                <li class="contact__icon github"><svg viewBox="0 0 128 128">
-                        <g fill="#181616">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
-                            </path>
-                            <path
-                                d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
-                            </path>
-                        </g>
-                    </svg></li>
 
-                <li class="contact__icon gmail"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 50 50" width="100px" height="100px">
-                        <path
-                            d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z" />
-                    </svg></li>
+              <div class="contact__text">
+                <h3>contact</h3>
+                <p>Feel free to email me at <span>raquel.illerias@gmail.com</span> or drop me a message in Linkedin.
+                    <br> I'd love to hear
+                    from you!
+                </p>
+                <ul class="contact__container">
+                    <li class="contact__icon github"><a href="https://github.com/raquel-illerias" target="_blank"><svg
+                                viewBox="0 0 128 128">
+                                <g fill="#181616">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
+                                    </path>
+                                    <path
+                                        d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                    </path>
+                                </g>
+                            </svg></a></li>
 
-                <li class="contact__icon linkedin">
-                    <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                        width="120px" height="120px">
-                        <path
-                            d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" />
-                    </svg>
-                </li>
-            </ul>
-            <div class="copyright">
-                <p>&copy; 2022 Raquel Illerias | All Rights Reserved</p>
+                    <li class="contact__icon gmail"><a href="mailto:raquel-illerias@gmail.com" target="_blank"> <svg
+                                fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px"
+                                height="100px">
+                                <path
+                                    d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z" />
+                            </svg></a></li>
+
+                    <li class="contact__icon linkedin"><a
+                            href="https://es.linkedin.com/in/raquel-iller%C3%ADas-g%C3%B3mez-44a94959" target="_blank">
+                            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 30 30" width="120px" height="120px">
+                                <path
+                                    d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>&copy; 2022 Raquel Illerias | All Rights Reserved</p>
+                </div>
             </div>
     </main>
+
+    <script src="./gsap/Flip.min.js"></script>
+    <script src="./gsap/gsap.min.js"></script>
+    <script src="./gsap/MotionPathPlugin.min.js"></script>
+    <script src="./gsap/Observer.min.js"></script>
+    <script src="./gsap/PixiPlugin.min.js"></script>
+    <script src="./gsap/ScrollToPlugin.min.js"></script>
+    <script src="./gsap/ScrollTrigger.min.js"></script>
+    <script src="./gsap/TextPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+
 </body>
 
 </html>
